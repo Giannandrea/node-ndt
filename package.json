@@ -1,0 +1,26 @@
+{
+  "name": "node-ndt",
+  "version": "0.1.1",
+  "description": "NDT for nodejs",
+  "main": "ndt.js",
+  "scripts": {
+    "start": "node ndt.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giannandrea/node-ndt.git"
+  },
+  "author": "Mauro Giannandrea",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/giannandrea/node-ndt/issues"
+  },
+  "homepage": "https://github.com/giannandrea/node-ndt#readme",
+  "engines": {
+    "node": ">= 0.1.0",
+    "npm": ">= 1.0.0"
+  },
+  "dependencies": {
+    "ws": "5.0.0"
+  }
+}
