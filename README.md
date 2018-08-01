@@ -22,7 +22,7 @@ We found some problems running on node 0.10.x using ws@1.1.5 for buffer size iss
   "data_format_version": "0.2.0",
   "measurement_start_time": "2018-07-31 13:03:29",
   "report_id": "1530626824934",
-  "software_name": "domotz_speed_test",
+  "software_name": "NDT_speed_test",
   "software_version": "1.0.0",
   "test_keys": {
     "advanced": {
