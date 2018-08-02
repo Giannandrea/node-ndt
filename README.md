@@ -9,9 +9,10 @@ Key points of this module is the ability to run on multiple nodejs version curre
 Tested on nodejs version > 6.9.x. 
 We found some problems running on node 0.10.x using ws@1.1.5 for buffer size issues.
 
-## Usage
+## Simple Usage
 
-    node ndt.js
+    node-ndt
+    node-ndt --version
 
 ## result example
 ```json
@@ -52,9 +53,7 @@ We found some problems running on node 0.10.x using ws@1.1.5 for buffer size iss
     
 ## Installation
     
-    git clone https://github.com/Giannandrea/node-ndt.git
-    npm install --prefix .
-    node ndt.js
+    npm install --global --save https://github.com/Giannandrea/node-ndt/tarball/master
 
 ## License
 
