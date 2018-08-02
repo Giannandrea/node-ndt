@@ -24,8 +24,8 @@ dns.lookup('mlab-ns.appspot.com', err => {
 });
 
 var cli = meow(`
-  COMMANDS (only one)
-    --version: to see spdtst's current version.
+  node-ndt (run just the command)
+    --version: to see node-ndt's current version.
 `, {
     alias: {
         version: pkg.version
