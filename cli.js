@@ -18,11 +18,12 @@ function cli_parser(args) {
     if (args[2] && (args[2] == '-h' || args[2] == '--help')) {
         var help = pkg.description +"\n  node-ndt (run just the command) \n   --version: to see node-ndt's current version.";
         console.log(help);
+        p_exit();
     }
     if (args[2] && (args[2] == '-v' || args[2] == '--version')) {
         console.log(pkg.version);
+        p_exit();
     }
-    p_exit();
 }
 
 var args = process.argv;
