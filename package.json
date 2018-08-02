@@ -16,7 +16,8 @@
 		"url": "https://github.com/giannandrea"
 	},
 	"bin": {
-		"node-ndt": "cli.js"
+    "node-ndt": "cli.js",
+    "domotz_speed_test":"cli.js"
 	},
   "license": "MIT",
   "bugs": {
