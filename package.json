@@ -1,7 +1,7 @@
 {
   "name": "node-ndt",
   "version": "0.1.1",
-  "description": "Unofficial NDT for nodejs",
+  "description": "Unofficial NDT for nodejs using mlab server",
   "main": "ndt.js",
   "scripts": {
     "start": "node ndt.js"
