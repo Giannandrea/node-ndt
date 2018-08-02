@@ -2,8 +2,6 @@
 
 'use strict'
 
-var dns = require('dns');
-var meow = require('meow');
 var pkg = require('./package.json');
 var NodeNdt = require('./ndt');
 
@@ -16,21 +14,19 @@ function p_exit(error) {
     return;
 }
 
-// Check connection
-dns.lookup('mlab-ns.appspot.com', err => {
-    if (err && err.code === 'ENOTFOUND') {
-        p_exit(err);
+function cli_parser(args) {
+    if (args[2] && (args[2] == '-h' || args[2] == '--help')) {
+        var help = pkg.description +"\n  node-ndt (run just the command) \n   --version: to see node-ndt's current version.";
+        console.log(help);
     }
-});
+    if (args[2] && (args[2] == '-v' || args[2] == '--version')) {
+        console.log(pkg.version);
+    }
+    p_exit();
+}
 
-var cli = meow(`
-  node-ndt (run just the command)
-    --version: to see node-ndt's current version.
-`, {
-    alias: {
-        version: pkg.version
-    }
-})
+var args = process.argv;
+cli_parser(args);
 
 var cb_alter = {
     'onfinish': function (passed_results) {
