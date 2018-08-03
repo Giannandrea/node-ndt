@@ -31,7 +31,7 @@ cli_parser(args);
 
 var cb_alter = {
     'onfinish': function (passed_results) {
-        console.log(passed_results);
+        process.stdout.write(JSON.stringify(passed_results));
         p_exit();
     }
 }
