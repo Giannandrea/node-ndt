@@ -27,10 +27,10 @@ var NodeNdt = function NodeNdt() {
                 "server_address": server
             },
             "simple": {
-                "download": results['s2cRate'] / 1000,
+                "download": results['s2cRate'],
                 "fastest_test": "server_infos",
                 "ping": results["avgrtt"],
-                "upload": results['c2sRate'] / 1000
+                "upload": results['c2sRate']
             },
             "test_c2s": [],
             "test_s2c": []
