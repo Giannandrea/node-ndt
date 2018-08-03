@@ -9,7 +9,7 @@ var NodeNdt = require('./ndt');
 function p_exit(error) {
     if (error)
         console.error(error.message);
-    var status = error ? 0 : 1;
+    var status = error ? 1 : 0;
     process.exit(status);
     return;
 }
